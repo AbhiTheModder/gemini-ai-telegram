@@ -27,13 +27,14 @@ async def start(_, message):
 @app.on_message(filters.command("get") & filters.private)
 async def say(_, message: Message):
     try:
-        await message.reply_text("<code>Please Wait...</code>")
+        i = await message.reply_text("<code>Please Wait...</code>")
         
         base_img = await message.reply_to_message.download()
 
         img = PIL.Image.open(base_img)
 
         response = model.generate_content(img)
+        i.delete()
 
         await message.reply_text(
             f"**Detail Of Image:** {response.text}", parse_mode=enums.ParseMode.MARKDOWN
