@@ -13,7 +13,8 @@
 - google-generativeai : `pip install google-generativeai`
 - PIL : `pip install Pillow` `# Only if you want to use 'aimage.py/google-pro-vision' model`
 
-# Note: Users in termux may face issue with installation of `google-generativeai`
+# Note:
+ **Users in termux may face issue with installation of `google-generativeai`**
 - To fix it install  these libraries first:
 - `pkg update && pkg upgrade -y`
 - `pkg install python`
