@@ -27,3 +27,9 @@ GRPC_PYTHON_DISABLE_LIBC_COMPATIBILITY=1 GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=1 GRPC
   pip install google-generativeai
   ```
 **Note:** Make sure to put your own `ANDROID_API` to which your device/android OS version sdk is on(based)
+
+# Usage:
+- **Userbots:**
+  Use files starting with `ub`, Fill the keys and you're good to go
+- **Simple Bots:**
+  Use files starting with `bot`, Fill the keys and you're good to go
