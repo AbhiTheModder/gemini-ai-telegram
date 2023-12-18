@@ -29,7 +29,7 @@ async def start(_, message):
 @app.on_message(filters.command("ask") & filters.private)
 async def say(_, message: Message):
     try:
-        await message.reply_text("<code>Please Wait...</code>")
+        i = await message.reply_text("<code>Please Wait...</code>")
 
         if len(message.command) > 1:
          prompt = message.text.split(maxsplit=1)[1]
@@ -43,6 +43,7 @@ async def say(_, message: Message):
     
         chat = model.start_chat()
         response = chat.send_message(prompt)
+        i.delete()
     
         await message.reply_text(f"**Question:**`{prompt}`\n**Answer:** {response.text}", parse_mode=enums.ParseMode.MARKDOWN)
     except Exception as e:
