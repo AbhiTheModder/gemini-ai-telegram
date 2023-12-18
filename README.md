@@ -22,7 +22,7 @@
  ```
 GRPC_PYTHON_DISABLE_LIBC_COMPATIBILITY=1 GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=1 GRPC_PYTHON_BUILD_SYSTEM_ZLIB=1 GRPC_PYTHON_BUILD_SYSTEM_CARES=1 CFLAGS+=" -U__ANDROID_API__ -D__ANDROID_API__=33 -include unistd.h" LDFLAGS+=" -llog" pip install grpcio
 ```
-- OR If you're too lzy to cpmile yourself and your API LEVEL is 33(Android OS: 13), Lucky You because i've pushed release of compiled wheels in releases section of this repo :D
+- OR If you're too lzy to cpmile yourself and your API LEVEL is 33(Android OS: 13), Lucky You because i've pushed release of compiled wheels in [releases](https://github.com/AbhiTheModder/gemini-ai-telegram/releases/) section of this repo :D
 
 - Now install `google-generativeai`:
   ```
