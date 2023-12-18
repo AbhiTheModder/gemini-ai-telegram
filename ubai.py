@@ -9,12 +9,14 @@ from pyrogram.types import Message
 
 from utils.misc import modules_help, prefix
 from utils.scripts import format_exc
+# from utils.config import GEMINI_KEY
 
 import PIL.Image
 
+API_KEY="your gemini api key here"
 
-API_KEY="your api key here"
 
+# genai.configure(api_key=GEMINI_KEY)
 genai.configure(api_key=API_KEY)
 
 model = genai.GenerativeModel('gemini-pro')
