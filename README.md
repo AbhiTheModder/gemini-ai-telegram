@@ -37,3 +37,8 @@ GRPC_PYTHON_DISABLE_LIBC_COMPATIBILITY=1 GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=1 GRPC
   Use files starting with `bot`, Fill the keys and you're good to go
 
   - You can also use `botmerged.py` if you want to integrate both models to your bot
+
+## CREDITS:
+- [Pyrofork](https://github.com/Mayuri-Chan/pyrofork/)
+- [GeminiAi](https://blog.google/technology/ai/google-gemini-ai/)
+- Myself :D
