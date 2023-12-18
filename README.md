@@ -35,4 +35,5 @@ GRPC_PYTHON_DISABLE_LIBC_COMPATIBILITY=1 GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=1 GRPC
   Use files starting with `ub`, Fill the keys and you're good to go
 - **Simple Bots:**
   Use files starting with `bot`, Fill the keys and you're good to go
-  `You can alslo use `botmerge` if you want to integrate both models to your bot
+
+  - You can also use `botmerged.py` if you want to integrate both models to your bot
