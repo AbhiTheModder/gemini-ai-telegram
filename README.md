@@ -1,5 +1,10 @@
 # gemini-ai-telegram
-Pyrogram(Pyrofork) Based Python script for Telegram Userbots and Bots
+<p align=center>
+<img src="https://github.com/AbhiTheModder/gemini-ai-telegram/assets/85984486/710e32e6-3751-4cc9-b846-f17367076962" width=500 height=300>
+
+   **Pyrogram(Pyrofork) Based Python script for Telegram Userbots and Bots**
+</p>
+
 
 # Requirements:
 - Python >=3.9
@@ -10,9 +15,10 @@ Pyrogram(Pyrofork) Based Python script for Telegram Userbots and Bots
 
 ## Note: Users in termux may face issue with installation of `google-generativeai`
 - To fix it install  these libraries first:
-- pkg update && pkg upgrade -y
-- pkg install openssl zlib c-ares -y
-- Install grpcio through below command:
+- `pkg update && pkg upgrade -y`
+- `pkg install python`
+- `pkg install openssl zlib c-ares -y`
+- Install `grpcio` through below command:
  ```
 GRPC_PYTHON_DISABLE_LIBC_COMPATIBILITY=1 GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=1 GRPC_PYTHON_BUILD_SYSTEM_ZLIB=1 GRPC_PYTHON_BUILD_SYSTEM_CARES=1 CFLAGS+=" -U__ANDROID_API__ -D__ANDROID_API__=33 -include unistd.h" LDFLAGS+=" -llog" pip install grpcio
 ```
