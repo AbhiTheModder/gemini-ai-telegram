@@ -11,7 +11,6 @@ from utils.misc import modules_help, prefix
 from utils.scripts import format_exc
 # from utils.config import GEMINI_KEY
 
-import PIL.Image
 
 API_KEY="your gemini api key here"
 
