@@ -5,6 +5,7 @@
    **Pyrogram(Pyrofork) Based Python script for Telegram Userbots and Bots**
 </p>
 
+**Try it Out in Telegram:** [Here](https://t.me/gemini_testbot)
 
 # Requirements:
 - Python >=3.9
