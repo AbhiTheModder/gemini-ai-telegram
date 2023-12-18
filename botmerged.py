@@ -29,10 +29,10 @@ async def start(_, message):
     
         await message.reply_text(f"{response.text}", parse_mode=enums.ParseMode.MARKDOWN)
 
-@app.on_message(filters.command("ask") & filters.private)
+@app.on_message(filters.command("askai") & filters.private)
 async def say(_, message: Message):
     try:
-        await message.reply_text("<code>Please Wait...</code>")
+        i = await message.reply_text("<code>Please Wait...</code>")
 
         if len(message.command) > 1:
          prompt = message.text.split(maxsplit=1)[1]
@@ -40,27 +40,29 @@ async def say(_, message: Message):
          prompt = message.reply_to_message.text
         else:
          await message.reply_text(
-            f"<b>Usage: </b><code>/ask [prompt/reply to message]</code>"
+            f"<b>Usage: </b><code>/askai [prompt/reply to message]</code>"
         )
          return
     
         chat = model_text.start_chat()
         response = chat.send_message(prompt)
+        i.delete()
     
         await message.reply_text(f"**Question:**`{prompt}`\n**Answer:** {response.text}", parse_mode=enums.ParseMode.MARKDOWN)
     except Exception as e:
         await message.reply_text(f"An error occurred: {str(e)}")
 
-@app.on_message(filters.command("get") & filters.private)
+@app.on_message(filters.command("getai") & filters.private)
 async def say(_, message: Message):
     try:
-        await message.reply_text("<code>Please Wait...</code>")
+        i = await message.reply_text("<code>Please Wait...</code>")
         
         base_img = await message.reply_to_message.download()
 
         img = PIL.Image.open(base_img)
 
         response = model.generate_content(img)
+        i.delete()
 
         await message.reply_text(
             f"**Detail Of Image:** {response.text}", parse_mode=enums.ParseMode.MARKDOWN
