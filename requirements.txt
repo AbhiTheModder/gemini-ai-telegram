@@ -1,0 +1,4 @@
+pyrofork
+tgcrypto
+Pillow
+google-generativeai

@@ -9,7 +9,7 @@ API_KEY="your gemini api key here"
 
 genai.configure(api_key=API_KEY)
 
-model = genai.GenerativeModel('gemini-pro')
+model = genai.GenerativeModel("gemini-pro")
 
 API_ID = your_api_id
 API_HASH = 'your_api_hash'

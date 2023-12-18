@@ -22,27 +22,24 @@ app = Client("gemini_ai_image", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_
 
 @app.on_message(filters.command("start") & filters.private)
 async def start(_, message):
-        chat = model.start_chat()
-        prompt = "Hi"
-        response = chat.send_message(prompt)
-    
-        await message.reply_text(f"{response.text}", parse_mode=enums.ParseMode.MARKDOWN)
+    await message.reply_text(f"Use: /get [Reply to image] to get details of it", parse_mode=enums.ParseMode.MARKDOWN)
 
-@app.on_message(filters.command("ask") & filters.private)
+@app.on_message(filters.command("get") & filters.private)
 async def say(_, message: Message):
     try:
-        await message.edit_text("<code>Please Wait...</code>")
+        await message.reply_text("<code>Please Wait...</code>")
+        
         base_img = await message.reply_to_message.download()
 
         img = PIL.Image.open(base_img)
 
         response = model.generate_content(img)
 
-        await message.edit_text(
+        await message.reply_text(
             f"**Detail Of Image:** {response.text}", parse_mode=enums.ParseMode.MARKDOWN
         )
     except Exception as e:
-        await message.edit_text(f"An error occurred: {str(e)}")
+        await message.reply_text(f"An error occurred: {str(e)}")
     finally:
         os.remove(base_img)
 
