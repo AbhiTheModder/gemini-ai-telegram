@@ -1,12 +1,11 @@
 # This scripts contains use cases for simple bots
 
-import os
 import google.generativeai as genai
 
 from pyrogram import Client, filters, enums
 from pyrogram.types import Message
 
-API_KEY="your api key here"
+API_KEY="your gemini api key here"
 
 genai.configure(api_key=API_KEY)
 
@@ -25,7 +24,7 @@ async def start(_, message):
         prompt = "Hi"
         response = chat.send_message(prompt)
     
-        await message.reply_text(f"**Question:**`{prompt}`\n**Answer:** {response.text}", parse_mode=enums.ParseMode.MARKDOWN)
+        await message.reply_text(f"{response.text}", parse_mode=enums.ParseMode.MARKDOWN)
 
 @app.on_message(filters.command("ask") & filters.private)
 async def say(_, message: Message):
