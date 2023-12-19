@@ -3,7 +3,6 @@ import os
 import asyncio
 import PIL.Image
 import google.generativeai as genai
-import google.generativeai as genai
 
 from pyrogram import Client, filters, enums
 from pyrogram.types import Message
