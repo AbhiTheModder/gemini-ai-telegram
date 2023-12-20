@@ -57,7 +57,7 @@ async def say(_, message: Message):
         response = chat.send_message(prompt)
         await i.delete()
 
-        await message.reply_text(f"**Question:**`{prompt}`\n**Answer:** {response.text}", parse_mode=enums.ParseMode.MARKDOWN)
+        await message.reply_text(f"**Answer:** {response.text}", parse_mode=enums.ParseMode.MARKDOWN)
     except Exception as e:
         await i.delete()
         await message.reply_text(f"An error occurred: {str(e)}")
@@ -72,7 +72,7 @@ async def say(_, message: Message):
         response = chat.send_message(prompt)
         await i.delete()
 
-        await message.reply_text(f"**Question:**`{prompt}`\n**Answer:** {response.text}", parse_mode=enums.ParseMode.MARKDOWN)
+        await message.reply_text(f"**Answer:** {response.text}", parse_mode=enums.ParseMode.MARKDOWN)
     except Exception as e:
         await i.delete()
         await message.reply_text(f"An error occurred: {str(e)}")
