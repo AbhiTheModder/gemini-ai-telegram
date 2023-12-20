@@ -33,7 +33,7 @@ async def say(_, message: Message):
          prompt = message.reply_to_message.text
         else:
          await message.reply_text(
-            f"<b>Usage: </b><code>/ask [prompt/reply to message]</code>"
+            f"<b>Usage: </b><code>/askai [prompt/reply to message]</code>"
         )
          return
 
