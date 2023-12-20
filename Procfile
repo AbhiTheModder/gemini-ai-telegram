@@ -1,1 +1,1 @@
-web: python3 botai.py
+web: python3 botmrg_grp.py
