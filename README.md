@@ -7,6 +7,9 @@
 
 **Try it Out in Telegram:** [Here](https://t.me/gemini_testbot)
 
+# Cloud Host:
+[![Deploy to Koyeb]([https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/AbhiTheModder/gemini-ai-telegram&branch=main&name=gemini)
+
 # Requirements:
 - Python >=3.9
 - Get [Obtain an API key from AI Studio](https://makersuite.google.com/app/apikey)
