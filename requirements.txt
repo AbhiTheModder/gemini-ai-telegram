@@ -2,7 +2,7 @@ pyrofork
 tgcrypto
 Pillow
 google-generativeai
-flask>=2.2.5
-gunicorn==20.1.0
-aiohttp==3.8.5
-pymongo[srv]==3.12.3
+flask
+gunicorn
+aiohttp
+pymongo[srv]
