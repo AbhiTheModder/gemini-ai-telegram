@@ -154,7 +154,7 @@ async def say(_, message: Message):
         os.remove(base_img)
     except Exception as e:
         await i.delete()
-        await message.reply_text(f"Kindly reply to an image 🫥")
+        await message.reply_text(f"<b>Usage: </b><code>/aiseller [target audience] [reply to product image]</code>")
 
 # Run the bot
 if __name__ == "__main__":
