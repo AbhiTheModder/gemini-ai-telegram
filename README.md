@@ -8,7 +8,8 @@
 **Try it Out in Telegram:** [Here](https://t.me/gemini_testbot)
 
 # Cloud Host:
-[![Deploy to Koyeb]([https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/AbhiTheModder/gemini-ai-telegram&branch=main&name=gemini)
+
+<a href="https://app.koyeb.com/deploy?type=git&repository=github.com/AbhiTheModder/gemini-ai-telegram&branch=main&name=gemini"><img src="https://www.koyeb.com/static/images/deploy/button.svg">
 
 # Requirements:
 - Python >=3.9
