@@ -1,1 +1,1 @@
-gunicorn app:app & python3 botai.py
+gunicorn app:app & python3 botmrg_grp.py
