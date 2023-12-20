@@ -8,8 +8,8 @@
 </p>
 
 ### 📹 You can checkout the demo video:
-- Using for bots[Here](https://x.com/Qbtaumai/status/1736681149047726176?s=20)
-- Using as UserBot[Here](https://x.com/Qbtaumai/status/1736681423703351629?s=20)
+- Using for bots: [Here](https://x.com/Qbtaumai/status/1736681149047726176?s=20)
+- Using as UserBot: [Here](https://x.com/Qbtaumai/status/1736681423703351629?s=20)
 
 # 🚀 Demo
 **Try it Out in Telegram:** [Here](https://t.me/gemini_testbot)
