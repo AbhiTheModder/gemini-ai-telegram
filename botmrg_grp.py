@@ -65,14 +65,13 @@ async def say(_, message: Message):
 @app.on_message(filters.text & filters.private)
 async def say(_, message: Message):
     try:
-        i = await message.reply_text("<code>Please Wait...</code>")
 
         prompt = message.text
         chat = model_text.start_chat()
         response = chat.send_message(prompt)
-        await i.delete()
+        await message.reply_chat_action(enums.ChatAction.TYPING)
 
-        await message.reply_text(f"**Answer:** {response.text}", parse_mode=enums.ParseMode.MARKDOWN)
+        await message.reply_text(f"{response.text}", parse_mode=enums.ParseMode.MARKDOWN)
     except Exception as e:
         await i.delete()
         await message.reply_text(f"An error occurred: {str(e)}")
