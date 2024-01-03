@@ -33,7 +33,7 @@ async def say(_, message: Message):
         response = model.generate_content(img)
 
         await message.edit_text(
-            f"**Detail Of Image:** {response.text}", parse_mode=enums.ParseMode.MARKDOWN
+            f"**Detail Of Image:** {response.parts[0].text}", parse_mode=enums.ParseMode.MARKDOWN
         )
     except Exception as e:
         await message.edit_text(f"An error occurred: {format_exc(e)}")

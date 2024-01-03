@@ -49,7 +49,7 @@ async def say(_, message: Message):
         await i.delete()
 
         await message.reply_text(
-            f"**Detail Of Image:** {response.text}", parse_mode=enums.ParseMode.MARKDOWN
+            f"**Detail Of Image:** {response.parts[0].text}", parse_mode=enums.ParseMode.MARKDOWN
         )
         os.remove(base_img)
     except Exception as e:
