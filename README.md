@@ -19,7 +19,7 @@
 <a href="https://app.koyeb.com/deploy?type=git&repository=github.com/AbhiTheModder/gemini-ai-telegram&branch=main&name=gemini"><img src="https://www.koyeb.com/static/images/deploy/button.svg">
 
 ## 📦 Requirements:
-- Python >=3.9
+- Python >=3.9 [Best if >=python3.11]
 - Get API_KEY : [Obtain an API key from AI Studio](https://makersuite.google.com/app/apikey)
 - Get BOT_TOKEN of your bot from [@BotFather](https://t.me/botfather)
 - Get API_ID and API_HASH from my.telegram.org -> `Api development tools` option
