@@ -73,7 +73,6 @@ async def say(_, message: Message):
 
         await message.reply_text(f"{response.text}", parse_mode=enums.ParseMode.MARKDOWN)
     except Exception as e:
-        await i.delete()
         await message.reply_text(f"An error occurred: {str(e)}")
 
 @app.on_message(filters.command("getai") & filters.group)
