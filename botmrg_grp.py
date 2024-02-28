@@ -93,7 +93,7 @@ async def say(_, message: Message):
         os.remove(base_img)
     except Exception as e:
         await i.delete()
-        await message.reply_text(f"Kindly reply to an image 🫥")
+        await message.reply_text(str(e))
 
 @app.on_message(filters.command("aicook") & filters.group)
 async def say(_, message: Message):
@@ -117,7 +117,7 @@ async def say(_, message: Message):
         os.remove(base_img)
     except Exception as e:
         await i.delete()
-        await message.reply_text(f"Kindly reply to an image 🫥")
+        await message.reply_text(str(e))
 
 @app.on_message(filters.command("aiseller") & filters.group)
 async def say(_, message: Message):
