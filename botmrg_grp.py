@@ -74,18 +74,6 @@ async def say(_, message: Message):
     except Exception as e:
         await message.reply_text(f"An error occurred: {str(e)}")
 
-@app.on_bot_business_message()
-async def say(_, message: Message):
-    try:
-        await message.reply_chat_action(enums.ChatAction.TYPING)
-        prompt = message.text
-        chat = model_text.start_chat()
-        response = chat.send_message(prompt)
-
-        await message.reply_text(f"{response.text}", parse_mode=enums.ParseMode.MARKDOWN)
-    except Exception as e:
-        await message.reply_text(f"An error occurred: {str(e)}")
-
 @app.on_message(filters.command("getai") & filters.group)
 async def say(_, message: Message):
     try:
