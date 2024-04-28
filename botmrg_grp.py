@@ -74,7 +74,7 @@ async def say(_, message: Message):
     except Exception as e:
         await message.reply_text(f"An error occurred: {str(e)}")
 
-@app.on_bot_business_message(filters.text & filters.private)
+@app.on_bot_business_message()
 async def say(_, message: Message):
     try:
         await message.reply_chat_action(enums.ChatAction.TYPING)
