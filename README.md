@@ -61,6 +61,9 @@ GRPC_PYTHON_DISABLE_LIBC_COMPATIBILITY=1 GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=1 GRPC
   Use file starting with `botmrg_grp.py`
   - It has feature of allowing use in private also and without commands allowing user to interact like chatting with someone
 
+## TODO
+× Chat History Support
+
 ## 💖 Like my work?
 This project needs a ⭐ from you. Don't forget to leave a ⭐.    
 
