@@ -43,6 +43,11 @@ GRPC_PYTHON_DISABLE_LIBC_COMPATIBILITY=1 GRPC_PYTHON_BUILD_SYSTEM_OPENSSL=1 GRPC
 **🗒️Note:** Make sure to put your own `ANDROID_API` to which your device/android OS version sdk is on(based)
 - OR If you're too lzy to compile yourself and your API LEVEL is 33(Android OS: 13), Lucky You because I've pushed release of compiled wheels in [releases](https://github.com/AbhiTheModder/gemini-ai-telegram/releases/) section of this repo :D
 
+OR Through `TUR` Repo:
+```shell
+python -m pip install grpcio --extra-index-url https://termux-user-repository.github.io/pypi/
+```
+
 - Now install `google-generativeai`:
   ```
   pip install google-generativeai
